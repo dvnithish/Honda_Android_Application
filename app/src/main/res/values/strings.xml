@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Pre preparation</string>
+    <string name="regSuccessMessage">Registered Successfully! Login Now.</string>
+</resources>

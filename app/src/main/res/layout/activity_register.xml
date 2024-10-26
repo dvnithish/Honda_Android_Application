@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/createacctext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Create  New  Account"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/employeeid2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:hint="Upload Your Photo"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:paddingLeft="7dp"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/employeepassword9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:hint="Upload Your Fingerprint"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:paddingLeft="7dp"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp" />
+
+            </LinearLayout>
+
+            <!-- Additional TextView and EditText go here -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/fingerprint"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:background="@drawable/upload"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.231"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/fingerprint1"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:background="@drawable/fingerprint_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.231"
+                android:layout_marginLeft="110dp"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/employeeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Employee Id"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/employeepassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Employee Password"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Full Name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/fathername"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Father Name"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/dateofbirth"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter DOB"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/qualification"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Qualification"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/dateofjoin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter DOJ"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Address Line 1"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Address Line 2"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter City"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/State"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter State"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/shift"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Shift"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/position"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Select Position"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/contactnumber"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Contact Number"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Email Id"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/drivinglicenceno"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Driving Licence No"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/createacctext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Associates Basis"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/createacctext11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="HMSI Experience"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/oldempid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter Old Email Id"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/doj"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter DOJ"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/dor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Enter DOR"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/createacctext12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Training Details"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:id="@+id/trainingstation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="Select Station"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/dateplan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:text="Date Plan"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/dateplanedit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="dd-mm-yy"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/dateactual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:text="Date Actual"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            />
+        <EditText
+            android:id="@+id/dateactualedit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli"
+            android:hint="dd-mm-yy"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:paddingLeft="7.0dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/createacctext13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Current Skill Level"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15.0dip"
+            android:fontFamily="@font/muli_extrabold"
+            android:text="Mark(%)"
+            android:textAllCaps="true"
+            android:textColor="@color/base_dark"
+            android:textSize="18.0sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="150dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint="B"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint="T"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint="P"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint="O"
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:maxLength="20"
+                android:paddingLeft="7dp"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/employeeid20"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:hint="Upload Skill Level OJT"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:paddingLeft="7dp"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/employeepassword90"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/muli"
+                    android:hint="Test Paper"
+                    android:inputType="textPersonName"
+                    android:maxLength="20"
+                    android:paddingLeft="7dp"
+                    android:textSize="13sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="120dp"/>
+
+            </LinearLayout>
+
+            <!-- Additional TextView and EditText go here -->
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/fingerprint3"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:background="@drawable/upload"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.231"
+                android:layout_marginLeft="10dp"/>
+
+            <Button
+                android:id="@+id/fingerprint11"
+                android:layout_width="98dp"
+                android:layout_height="100dp"
+                android:background="@drawable/upload"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.907"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.231"
+                android:layout_marginLeft="110dp"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/cardRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15.0dip">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/signinbtncard"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:elevation="5.0dip"
+                card_view:cardCornerRadius="2.0dip"
+                card_view:cardPreventCornerOverlap="true">
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonmain"
+                    android:fontFamily="@font/muli_semibold"
+                    android:minHeight="50px"
+                    android:padding="10dip"
+                    android:text="Register"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textColorHint="@color/material_cyan_500"
+                    android:visibility="visible" />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
